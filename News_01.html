@@ -4,7 +4,7 @@
     <head>
 
         <meta charset="UTF-8">
-        <title>HOME · ailia DX Insight</title>
+        <title>Update1.1 · ailia DX Insight</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="HonKit 5.1.4">
@@ -45,7 +45,7 @@
 
                     <ul class="summary">     
                         
-                        <li class="chapter active" data-level="1.1" data-path="./">
+                        <li class="chapter " data-level="1.1" data-path="./">
                             
                             <a href="./">
                         
@@ -598,68 +598,35 @@
                                 
                                     <section class="normal markdown-section">
                                     
-                                        <p><img src="img/ailia_DX_logo_01.png" alt="ailia_logo.png"></p>
-                                        <h2 id="improvement-of-business-efficiency-through-the-implementation-of-large-language-models-llms">Improvement of business efficiency through the implementation of large language models (LLMs)</h2>
-                                        <p>The emergence of large language models (LLMs), represented by ChatGPT, is accelerating the use of AI to enhance office work efficiency.
-                                        The business application of large language models is also being emphasized for improving corporate competitiveness, and AI is becoming central to digital transformation (DX).<br>
-                                        &quot;ailia DX Insight&quot; introduces large language models into office work to support various tasks from multiple perspectives.</p>
+                                        <h1>ailia DX Insight Update Guide from 1.0 to 1.1</h1>
+                                        <p>In ailia DX Insight 1.1, the application's digital certificate has been updated. In Microsoft's installer, msix, when a digital certificate is updated, it is recognized as a different application.  （Reference:<a target="_blank" href="https://github.com/microsoft/msix-packaging/issues/365"></a>https://github.com/microsoft/msix-packaging/issues/365</a>） Therefore, when updating from ailia DX Insight 1.0 to 1.1, please follow the steps below, uninstall the old version and then install the new one.<br>
+
+
+                                        <h2>For Windows</h2>
+                                        <p>Select ailia_dx_insight from the Start menu, right-click, and uninstall.<br>
+                                        （If you cannot find it in the Start menu, please search in "All Apps"）</p>
+                                        <p><img src="img/UpdateGuide_01.png" alt="UpdateGuide_01.png"></p>
+                                        <p>Double-click on ailia_dx_insight.msix and proceed with the installation.</p>
+                                        <p><img src="img/UpdateGuide_02.png" alt="UpdateGuide_02.png"></p>
+                                        <p>User data is stored in<code>c:/Users/[UserName]/Documents(*)/ailia DX Insight</code>. so it will be retained.</p>
+
+                                        <p>（*）It may also be displayed as "My Documents."</p>
+
+                                        <h2>For Mac</h2>
+                                        <p>Open ailia_dx_insight.dmg and overwrite by dropping ailia_dx_insight.app into the Application folder.</p>
+
+                                        <h2>Config File Update</h2>
+                                        <p>If you are using a config file in ailia DX Insight 1.0, the config file needs to be updated. At the first launch of ailia DX Insight 1.1, the dialog below will be displayed, so please set the path for the config file.</p>
+                                        <p><img src="img/ConfigFile_02.png" alt="ConfigFile_02.png"></p>
+                                        <p>If there have been changes to the file since the registration of the config file, the following dialog confirming whether to reload will be displayed.
+                                            Select "Yes" to reload the config file, and the changes will be applied.</p>
+                                        <p><img src="img/ConfigFile_03.png" alt="ConfigFile_03.png"></p>
+                                        <p>Furthermore, from the settings screen → Config Files, it is possible to manually register a config file.<br>It is also possible to unregister a config file on the same screen.</p>
+                                        <p><img src="img/ConfigFile_01.png" alt="ConfigFile_01.png"></p>
+
 
                                         <p><br></p>
-
-                                        <ul class="news-list">
-                                            <li class="item">
-                                                <a href="News_01.html">
-                                                    <p class="date">2024/8/06</p>
-                                                    <p class="category"><span>Update</span></p>
-                                                    <p class="title">ailia DX Insight 1.1 has been released. Please click here to check the update guide for how to update.</p>
-                                                </a>
-                                            </li>
-                                            <li class="item">
-                                                <a href="AskAboutImage.html">
-                                                    <p class="date">2024/8/06</p>
-                                                    <p class="category"><span>Version 1.1 New Features</span></p>
-                                                    <p class="title">Added the ability to ask questions about image files.</p>
-                                                </a>
-                                            </li>
-                                            <li class="item">
-                                                <a href="GenerateImage.html">
-                                                    <p class="date">2024/8/06</p>
-                                                    <p class="category"><span>Version 1.1 New Features</span></p>
-                                                    <p class="title">Editing capabilities have been added to image generation.</p>
-                                                </a>
-                                            </li>
-                                            <li class="item">
-                                                <a href="GenerateImage.html">
-                                                    <p class="date">2024/8/06</p>
-                                                    <p class="category"><span>Version 1.1 New Features</span></p>
-                                                    <p class="title">Added the ability to add watermarks to image generation.</p>
-                                                </a>
-                                            </li>
-                                            <li class="item">
-                                                <a href="Recording.html">
-                                                    <p class="date">2024/8/06</p>
-                                                    <p class="category"><span>Version 1.1 New Features</span></p>
-                                                    <p class="title">A function to export minutes in txt format has been added.</p>
-                                                </a>
-                                            </li>
-                                            <li class="item">
-                                                <a href="Translation.html">
-                                                    <p class="date">2024/8/06</p>
-                                                    <p class="category"><span>Version 1.1 New Features</span></p>
-                                                    <p class="title">When translating a PDF file, a new function has been added to export the translation results as a PDF.</p>
-                                                </a>
-                                            </li>
-                                        </ul>
-                                        
-                                        <p><br></p>
-
-                                        <h5 id="overview"><a href="overview.html">Overview</a></h5>
-                                        <h5 id="set-up"><a href="SetUp.html">Set up</a></h5>
-                                        <h5 id="operating-the-file-view"><a href="FileView.html">Operating the File View</a></h5>
-                                        <h5 id="registering-a-file-in-the-index"><a href="IndexRegister.html">Registering a File in the Index</a></h5>
-                                        <h5 id="using-ai"><a href="UseAI.html">Using AI</a></h5>
-                                        <p><br></p>
-                                        <h4 id="next ＞"><a href="overview.html">Next ＞</a></h4>
+                                        <h4><a href="index.html">Back to HOME</a></h4>
 
                                                             
                                     </section>
@@ -685,8 +652,8 @@
                         
                 </div>         
                         
-                <a href="overview.html" class="navigation navigation-next navigation-unique" aria-label="Next page: Overview">
-                    <i class="fa fa-angle-right"></i>
+                <a href="AzureOpenAI.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page: Azure OpenAI Service">
+                    <i class="fa fa-angle-left"></i>
                 </a>
             
             </div>
