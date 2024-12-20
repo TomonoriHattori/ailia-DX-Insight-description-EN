@@ -569,7 +569,7 @@
                                     
                                 </li>
 
-                                <li class="chapter active" data-level="5.1.5" data-path="Gemini.html">
+                                <li class="chapter " data-level="5.1.5" data-path="Gemini.html">
                                     
                                     <a href="Gemini.html">
                                 
@@ -609,7 +609,7 @@
                             <ul class="articles">
                                 
                     
-                                <li class="chapter " data-level="6.1.1" data-path="OpenAI_APIKey.html">
+                                <li class="chapter active" data-level="6.1.1" data-path="OpenAI_APIKey.html">
                                     
                                     <a href="OpenAI_APIKey.html">
                                 
@@ -719,7 +719,7 @@
                         <!-- Title -->
                         <h1>
                             <i class="fa fa-circle-o-notch fa-spin"></i>
-                            <a href="." >Gemini</a>
+                            <a href="." >How to Obtain an OpenAI API Key</a>
                         </h1>
                     </div>
 
@@ -731,33 +731,59 @@
                                 
                                     <section class="normal markdown-section">
                                     
-                                        <h1 id="gemini">Gemini</h1>
-                                        <p>ailia DX insight can also perform text generation using Gemini. For details on Gemini, please refer to <a href="https://ai.google.dev/gemini-api/docs/models/gemini?hl=ja" target="_blank">here</a>.</p>
-                                        <h2 id="how-to-connect-to-gemini">How to Connect to Gemini</h2>
-                                        <h3 id="calling-the-settings-window">Calling the Settings Window</h3>
-                                        <ol>
-                                        <li>In the initial screen of ailia DX insight, click the gear icon in the upper right to display the settings window.<br>
-                                        <img src="img/setup_03.png" alt="setup_03.png"><br></li>
-                                        <li>Click &quot;Gemini&quot; in the &quot;Chat AI&quot; items and select &quot;+ Add&quot;.
-                                        <img src="img/gemini_01.png" alt="gemini_01.png"><br></li>
-                                        </ol>
-                                        <h3 id="register-gemini-settings">Register Gemini Settings</h3>
-                                        <ol>
-                                        <li><p>A window will open to register ChatGPT deployed in Gemini. Fill in each item.<br>
-                                        <img src="img/gemini_02.png" alt="gemini_02.png"><br></p>
-                                        <ul>
-                                        <li>Name: Name used for UI display</li>
-                                        <li>Description: Use as a memo as needed</li>
-                                        <li>Model: Deployed model name</li>
-                                        <li>Maximum Token Length: Maximum token count of the model</li>
-                                        </ul>
-                                        </li>
-                                        <li><p>When &quot;Register API Key&quot; is displayed in the API key section, set it.<br>
-                                        For information on API keys and model names, please refer to <a href="https://ai.google.dev/gemini-api/docs/api-key?hl=ja" target="_blank">here</a>.</p>
-                                        </li>
-                                        </ol>
-                                        <p><br></p>
-                                        <h4 id="next ＞"><a href="OpenAI_APIKey.html">Next ＞</a></h4>
+                                        <section class="normal markdown-section">
+                                
+                                            <h1 id="how-to-obtain-an-openai-api-key">How to Obtain an OpenAI API Key</h1>
+                                            <p>To use OpenAI&apos;s features within &quot;ailia DX insight,&quot; you need to obtain an API key from OpenAI.<br>
+                                            Furthermore, OpenAI sets <a href="RateLimits.md">rate limits</a>, so it is recommended to raise the rate limit ceiling, especially if used by multiple people. This requires a certain number of days (minimum of 7 days) to pass, so prompt action is necessary.</p>
+                                            <h2 id="create-an-openai-account">Create an OpenAI Account</h2>
+                                            <ol>
+                                            <li>Select &quot;Sign up&quot; from the <a href="https://platform.openai.com/docs/overview" target="_blank">OpenAI Platform</a>.<br>
+                                            <img src="img/API_key_01.png" alt="API_key_01"><br></li>
+                                            <li>Follow the prompts to enter your email address and password, then select continue.<br>
+                                            <img src="img/API_key_02.png" alt="API_key_02"><br></li>
+                                            <li>You will receive an email titled &quot;OpenAI - Verify your email&quot; to the registered email address. Select the email verification to launch your browser.<br>
+                                            <img src="img/API_key_03.png" alt="API_key_03"><br></li>
+                                            <li>In the launched browser, enter your &quot;name,&quot; &quot;organization name (optional),&quot; and &quot;date of birth,&quot; and after confirming the terms and privacy policy, select agree.
+                                            <br>
+                                            <img src="img/API_key_04.png" alt="API_key_04"><br></li>
+                                            </ol>
+                                            <h2 id="register-your-phone-number">Register Your Phone Number</h2>
+                                            <p>You need to register a phone number that can receive short messages to obtain an API key.</p>
+                                            <ol>
+                                            <li>Select &quot;Dashboard&quot; at the top right of the OpenAI Docs page.<br>
+                                            <img src="img/API_key_05.png" alt="API_key_05"><br></li>
+                                            <li>From the menu on the left, select &quot;API keys,&quot; then select &quot;Start verification&quot; next to the prompt &quot;Verify your phone number to create an API key.&quot;<br>
+                                            <img src="img/API_key_06.png" alt="API_key_06"><br></li>
+                                            <li>Enter your phone number and select &quot;Send code.&quot;<br>
+                                            <img src="img/API_key_07.png" alt="API_key_07"><br></li>
+                                            <li>You will receive an OpenAI verification code via short message to the registered phone number, which you need to enter on the next screen to complete the phone number registration.<br>
+                                            <img src="img/API_key_08.png" alt="API_key_08"><br></li>
+                                            </ol>
+                                            <h2 id="generate-an-api-key">Generate an API Key</h2>
+                                            <ol>
+                                            <li>Select &quot;+ Create new secret key.&quot;<br>
+                                            <img src="img/API_key_09.png" alt="API_key_09"><br></li>
+                                            <li>&quot;Create new secret key&quot; window will appear. Enter a name of your choice to generate the API key.<br>
+                                            <img src="img/API_key_10.png" alt="API_key_10"><br></li>
+                                            <li>The API key will be displayed.<br></li>
+                                            <li>The generated API key will only be shown once, so it&apos;s recommended to copy and save it at this point.<br> 
+                                            <img src="img/API_key_11.png" alt="API_key_11"><br></li>
+                                            </ol>
+                                            <h2 id="register-payment-information">Register Payment Information</h2>
+                                            <ol>
+                                            <li>Click on your account icon at the top right of the OpenAI home screen and select &quot;Your profile.&quot;<br>　
+                                            <img src="img/API_key_12.png" alt="API_key_12"><br></li>
+                                            <li>You will see the Settings screen. From the menu on the left, select &quot;Billing&quot; and then &quot;Add payment details.&quot;<br>
+                                            <img src="img/API_key_13.png" alt="API_key_13"><br></li>
+                                            <li>A window saying &quot;What best describes you?&quot; will appear. Select either &quot;individual&quot; or &quot;Company.&quot;<br> 
+                                            <img src="img/API_key_14.png" alt="API_key_14"><br></li>
+                                            <li>Enter your card information/billing address in the displayed window and select &quot;Continue&quot; to complete the registration of your payment information.</li>
+                                            <li>You can manage the costs associated with API by <a href="Pricing.html">setting a monthly payment limit</a>.</li>
+                                            </ol>
+                                            <h4 id="next ＞"><a href="Pricing.html">Next ＞</a></h4>
+                                            
+                                        </section>
                                                             
                                     </section>
                                                         
@@ -782,11 +808,12 @@
                         
                 </div>         
                         
-                <a href="AzureOpenAI.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page: Azure OpenAI Service">
+                <a href="Gemini.html" class="navigation navigation-prev " aria-label="Previous page: Gemini">
                     <i class="fa fa-angle-left"></i>
                 </a>
-
-                <a href="OpenAI_APIKey.html" class="navigation navigation-next navigation-unique" aria-label="Next page: Obtain an OpenAI API Key">
+                
+                
+                <a href="Pricing.html" class="navigation navigation-next navigation-unique" aria-label="Next page: OpenAI's Pricing">
                     <i class="fa fa-angle-right"></i>
                 </a>
             
