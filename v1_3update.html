@@ -52,10 +52,10 @@
     <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="UseAI.html" />
+    <link rel="next" href="v1_2update.html" />
     
     
-    <link rel="prev" href="IndexRegister.html" />
+    <link rel="prev" href="SetUp.html" />
     
 
     </head>
@@ -123,7 +123,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.4" data-path="v1_3update.html">
+        <li class="chapter active" data-level="1.4" data-path="v1_3update.html">
             
                 <a href="v1_3update.html">
             
@@ -209,7 +209,7 @@
             
         </li>
     
-        <li class="chapter active" data-level="2.1.3" data-path="ConfigFile.html">
+        <li class="chapter " data-level="2.1.3" data-path="ConfigFile.html">
             
                 <a href="ConfigFile.html">
             
@@ -751,7 +751,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href="." ><img src='img_icons/manage_accounts.png'>Creating a Config File</a>
+        <a href="." ><img src='img_icons/newspaper.png'>v1.3 release note</a>
     </h1>
 </div>
 
@@ -766,41 +766,49 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h1 id="creating-a-config-file">Creating a Config File</h1>
-<p>By creating a config file, you can display the terms image when starting the application or always display the company logo.<br>
-*The config file can be selected at the initial startup of ailia DX Insight.<br></p>
-<p><br></p>
-<h2 id="example-of-creating-a-config-file">Example of Creating a Config File</h2>
-<p>Create the config format in json.</p>
-<pre><code>{
-  &quot;apiKey&quot; : {
-    &quot;openAI&quot;: &quot;YourOpenAIApiKey&quot;
-  },
-  &quot;licenseFile&quot;: &quot;/path/to/license/file&quot;,
-  &quot;terms&quot;: {
-    &quot;image&quot;: &quot;/path/to/terms/image&quot;
-  },
-  &quot;logo&quot;: &quot;path/to/logo/image&quot;
-}
-</code></pre><p><code>&quot;apiKey&quot;</code><br>
-Enter the OpenAI API key here.<br>
-<code>&quot;licenseFile&quot;</code><br>
-Specify the path to the license file as a relative path from the config file.<br>
-<code>&quot;terms&quot;</code> <code>&quot;logo&quot;</code><br>
-Specify the path to the image file as a relative path from the config file.</p>
-<p>Other than the license file item, the omission of items does not affect the startup of the app.</p>
-<p><br>
-Since settings and image files are copied locally, access to the shared folder after initial setup is not required.</p>
-<h2 id="applying-the-config-file--applying-the-license">Applying the Config File / Applying the License</h2>
-<p>When ailia DX Insight is launched for the first time, a window will appear asking you to &quot;Please select a license file or config file.&quot; Please specify the folder to apply.<br>
-<img src="img/setup_001.png" alt="setup"><br>
-<br> Alternatively, you can register/update the license within the &quot;Config File&quot; item in the settings screen .<br> You can also unregister the config file within the same item.<br> 
-<img src="img/ConfigFile_01_02.png" alt="ConfigFile_01_02"><br></p>
-<h2 id="checking-the-expiration-date-of-the-license-file">Checking the Expiration Date of the License File<div id="update07"></div></h2>
-<p>You can check the validity period of the license within the &quot;Config File&quot; item on the settings screen. <br>
-<img src="img/ConfigFile_01_03.png" alt="ConfigFile_01_03"><br></p>
-<p><br></p>
-<h4 id="next ＞"><a href="UseAI.html">Next ＞</a></h4>
+                                <h1 id="version-13-release-notes">Version 1.3 Release Notes</h1>
+<h2 id="ui-improvements">UI Improvements</h2>
+<ul>
+<li><p>Changed to display a new chat start screen at startup<br>
+<img src="img/StartChat_01.jpg" alt="StartChat_01" height="350px"></p>
+</li>
+<li><p>Changed to stop auto-scrolling when scrolling while streaming</p>
+</li>
+<li><p>Settings are now saved when changing chat mode via the query bar<br>
+<img src="img/SelectLLM_01.png" alt="SelectLLM_01" height="300px"></p>
+</li>
+<li><p><a href="SetUp.html#changing-color-theme">Added dark mode</a></p>
+</li>
+</ul>
+<h2 id="new-features">New Features</h2>
+<ul>
+<li><a href="LocalLLM.html#building-a-local-llm-within-ailia-dx-insight">Support for gemma3 through ailia LLM update</a></li>
+<li><a href="GenerateImage.html#change-the-aspect-ratio-of-the-image">Added the ability to specify aspect ratio for image generation</a></li>
+<li><a href="IndexRegister.html#manage-registered-indexes">Added index management feature</a></li>
+</ul>
+<h2 id="usability-improvements">Usability Improvements</h2>
+<ul>
+<li>Changed image generation timeout from 30 seconds to 90 seconds</li>
+<li>Changed chat history names for image generation and summarization to be more understandable</li>
+<li>Display detailed error when there is a config file update error</li>
+<li>Renamed translation results to new translations</li>
+</ul>
+<h2 id="initial-setup-update">Initial Setup Update</h2>
+<ul>
+<li>Changed ailia LLM to be set by default</li>
+</ul>
+<h2 id="terms-of-use">Terms of Use</h2>
+<ul>
+<li>Display terms of use at startup</li>
+</ul>
+<h2 id="optimization">Optimization</h2>
+<ul>
+<li>Reduced app startup time</li>
+</ul>
+<h2 id="bug-fixes">Bug Fixes</h2>
+<ul>
+<li>Fixed an issue where keyboard input would not be accepted on macOS</li>
+</ul>
 
                                 
                                 </section>
@@ -828,12 +836,12 @@ Since settings and image files are copied locally, access to the shared folder a
 
             
                 
-                <a href="IndexRegister.html" class="navigation navigation-prev " aria-label="Previous page: <img src='img_icons/task.png'>Registering Files to Index">
+                <a href="SetUp.html" class="navigation navigation-prev " aria-label="Previous page: <img src='img_icons/manage_accounts.png'>Setup">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
                 
-                <a href="UseAI.html" class="navigation navigation-next " aria-label="Next page: <img src='img_icons/psychology.png'>Use AI">
+                <a href="v1_2update.html" class="navigation navigation-next " aria-label="Next page: <img src='img_icons/newspaper.png'>v1.2 release note">
                     <i class="fa fa-angle-right"></i>
                 </a>
                 
@@ -844,7 +852,7 @@ Since settings and image files are copied locally, access to the shared folder a
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"<img src='img_icons/manage_accounts.png'>Creating a Config File","level":"2.1.3","depth":2,"next":{"title":"<img src='img_icons/psychology.png'>Use AI","level":"3.1","depth":1,"path":"UseAI.md","ref":"UseAI.md","articles":[{"title":"<img src='img_icons/forum.png'>Ask AI Questions","level":"3.1.1","depth":2,"path":"AskToAI.md","ref":"AskToAI.md","articles":[]},{"title":"<img src='img_icons/forum.png'>Ask Questions About Document Files","level":"3.1.2","depth":2,"path":"DocumentFile.md","ref":"DocumentFile.md","articles":[]},{"title":"<img src='img_icons/photo_auto_merge.png'>Ask Questions About Image Files","level":"3.1.3","depth":2,"path":"AskAboutImage.md","ref":"AskAboutImage.md","articles":[]},{"title":"<img src='img_icons/summarize.png'>Summarize Document Files","level":"3.1.4","depth":2,"path":"SummarizeDocument.md","ref":"SummarizeDocument.md","articles":[]},{"title":"<img src='img_icons/translate.png'>Translate Document Files","level":"3.1.5","depth":2,"path":"Translation.md","ref":"Translation.md","articles":[]},{"title":"<img src='img_icons/spellcheck.png'>Proofreading document files","level":"3.1.6","depth":2,"path":"Proofread.md","ref":"Proofread.md","articles":[]},{"title":"<img src='img_icons/image_search.png'>Search Images","level":"3.1.7","depth":2,"path":"SearchImage.md","ref":"SearchImage.md","articles":[]},{"title":"<img src='img_icons/palette.png'>Generate Images","level":"3.1.8","depth":2,"path":"GenerateImage.md","ref":"GenerateImage.md","articles":[]},{"title":"<img src='img_icons/record_voice_over.png'>Take Meeting Minutes","level":"3.1.9","depth":2,"path":"Recording.md","ref":"Recording.md","articles":[]},{"title":"<img src='img_icons/mic.png'>Using Voice Input","level":"3.1.10","depth":2,"path":"VoiceInput.md","ref":"VoiceInput.md","articles":[]}]},"previous":{"title":"<img src='img_icons/task.png'>Registering Files to Index","level":"2.1.2","depth":2,"path":"IndexRegister.md","ref":"IndexRegister.md","articles":[]},"dir":"ltr"},"config":{"plugins":["back-to-top-button","hide-published-with","custom-favicon"],"styles":{"website":"styles/website.css"},"pluginsConfig":{"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"hide-published-with":{},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"favicon":"img/favicon.ico","back-to-top-button":{},"custom-favicon":{},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"ailia DX Insight","language":"ja","gitbook":"*"},"file":{"path":"ConfigFile.md","mtime":"2025-03-14T08:48:25.873Z","type":"markdown"},"gitbook":{"version":"5.1.4","time":"2025-05-08T07:41:04.787Z"},"basePath":".","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"<img src='img_icons/newspaper.png'>v1.3 release note","level":"1.4","depth":1,"next":{"title":"<img src='img_icons/newspaper.png'>v1.2 release note","level":"1.5","depth":1,"path":"v1_2update.md","ref":"v1_2update.md","articles":[]},"previous":{"title":"<img src='img_icons/manage_accounts.png'>Setup","level":"1.3","depth":1,"path":"SetUp.md","ref":"SetUp.md","articles":[]},"dir":"ltr"},"config":{"plugins":["back-to-top-button","hide-published-with","custom-favicon"],"styles":{"website":"styles/website.css"},"pluginsConfig":{"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"hide-published-with":{},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"favicon":"img/favicon.ico","back-to-top-button":{},"custom-favicon":{},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"ailia DX Insight","language":"ja","gitbook":"*"},"file":{"path":"v1_3update.md","mtime":"2025-05-08T07:30:54.166Z","type":"markdown"},"gitbook":{"version":"5.1.4","time":"2025-05-08T07:41:04.787Z"},"basePath":".","book":{"language":""}});
         });
     </script>
 </div>
