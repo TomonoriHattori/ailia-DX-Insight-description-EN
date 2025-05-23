@@ -52,10 +52,8 @@
     <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="GenerateImage.html" />
     
-    
-    <link rel="prev" href="Proofread.html" />
+    <link rel="prev" href="Pricing.html" />
     
 
     </head>
@@ -326,7 +324,7 @@
             
         </li>
     
-        <li class="chapter active" data-level="3.1.7" data-path="SearchImage.html">
+        <li class="chapter " data-level="3.1.7" data-path="SearchImage.html">
             
                 <a href="SearchImage.html">
             
@@ -644,7 +642,7 @@
             
         </li>
     
-        <li class="chapter " data-level="6.1.3" data-path="OpenAI_Organization.html">
+        <li class="chapter active" data-level="6.1.3" data-path="OpenAI_Organization.html">
             
                 <a href="OpenAI_Organization.html">
             
@@ -764,7 +762,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href="." ><img src='img_icons/image_search.png'>Search Images</a>
+        <a href="." ><img src='img_icons/info.png'>OpenAI API Organization</a>
     </h1>
 </div>
 
@@ -779,28 +777,47 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h1 id="search-images">Search Images</h1>
-<p>By registering image files to an index, you can perform a similar image search. The search will be executed on the indexed image files. There are two search methods: text search and image search.<br></p>
-<p>Look <a href="IndexRegister.html">here</a> for how to register files to indexes.</p>
-<h2 id="search-by-text">Search by Text</h2>
-<p>You can search for images similar to the search word.</p>
+                                <h1 id="openai-api-organization-authentication">OpenAI API Organization Authentication</h1>
+<p>OpenAI allows you to use the latest models by authenticating your API Organization.
+API Organization authentication is an added authentication process to mitigate use cases that violate the API usage policy.<br>
+*To authenticate, you need to [add a payment method]<br>(OpenAI_APIKey.md#register-payment-information) for API development.</p>
+<h2 id="what-you-need-for-authentication">What You Need for Authentication</h2>
+<p>API Organization requires a valid government-issued ID from a supported country. Please prepare at least one of the following IDs before proceeding with authentication.<br>
+*Because the authentication process involves taking a photo of the ID holder&apos;s face with a camera for identity verification, please ensure that the authentication is performed by the individual themselves.<br></p>
+<ul>
+<li>Driver&apos;s license</li>
+<li>Passport</li>
+<li>Residence card</li>
+<li>My Number card (Individual Number Card)</li>
+<li>Visa</li>
+</ul>
+<p>Also, a smartphone is required for authentication because it uses a camera.<br>
+(Even if you access it from a PC, you will be guided to move to a smartphone via a QR code during the authentication process.)<br></p>
+<h1 id="steps-for-openai-api-organization-authentication">Steps for OpenAI API Organization Authentication</h1>
 <ol>
-<li>Select &quot;Image Search&quot; from the app menu at the top left of the screen.<br>
-<img src="img/UseAI_13.png" alt="useai_13.png"><br></li>
-<li>Enter the search word into the chatbox and send it.</li>
-<li>The search results will be displayed in order of similarity. Clicking the displayed search results will arrange all images in the order of similarity and display them in a grid.</li>
+<li><p>Go to Setting &gt; <a href="https://platform.openai.com/settings/organization/general" target="_blank">General</a> on the OpenAI API platform and authenticate from &quot;Verify Organization.&quot;<br>
+<img src="img/API_organization01.jpg" alt="API_organization01"><br></p>
+</li>
+<li><p>Authentication uses Persona, an external digital identity verification platform.<br>
+Selecting Start ID Check will take you to the Persona authentication platform.<br>
+After reviewing the Persona and OpenAI privacy policies, check &quot;I consent to the processing of biometric information.&quot; and select &quot;Get Started Now.&quot;<br>
+<img src="img/API_organization02.jpg" alt="API_organization02"><br></p>
+</li>
+<li><p>Select your country of residence and select &quot;Confirm.&quot;<br>
+<img src="img/API_organization03.jpg" alt="API_organization03"><br></p>
+</li>
+<li><p>Select the type of identification document from the options.<br>
+<img src="img/API_organization04.jpg" alt="API_organization04"><br>
+On the next screen, take a photo of the identification document using the camera. (If prompted for camera access, select Allow.)<br></p>
+</li>
+<li><p>Perform facial recognition for identity verification. Continue following the instructions on the screen.<br>
+<img src="img/API_organization05.jpg" alt="API_organization05"><br></p>
+</li>
+<li><p>Once the API Organization authentication is complete, the Verifications display on the API platform will show &quot;Organization Verified,&quot; and you will be able to use OpenAI&apos;s latest models.<br>
+<img src="img/API_organization06.jpg" alt="API_organization06"><br></p>
+</li>
 </ol>
-<p><br></p>
-<h2 id="search-by-image">Search by Image</h2>
-<p>Right-click the image file you want to search in &quot;Image Search&quot; mode, and select &quot;Search by this image&quot;.</p>
-<ol>
-<li>Right-click the image file you want to search in &quot;Image Search&quot; mode, and select &quot;Search by this image&quot;.<br>
-<img src="img/UseAI_15.png" alt="useai_15.png"><br></li>
-<li>The search results will be displayed in order of similarity. Clicking the displayed search results will arrange all images in similarity order and display them in a grid.</li>
-</ol>
-<p><br></p>
-<h4 id="next ＞"><a href="GenerateImage.html">Next ＞</a></h4>
-<h4 id="back-to-index"><a href="UseAI.html">Back to Index</a></h4>
+<h4 id="back-to-home"><a href="./">Back to Home</a></h4>
 
                                 
                                 </section>
@@ -828,14 +845,10 @@
 
             
                 
-                <a href="Proofread.html" class="navigation navigation-prev " aria-label="Previous page: <img src='img_icons/spellcheck.png'>Proofreading document files">
+                <a href="Pricing.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page: <img src='img_icons/info.png'>OpenAI's Pricing">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
-                
-                <a href="GenerateImage.html" class="navigation navigation-next " aria-label="Next page: <img src='img_icons/palette.png'>Generate Images">
-                    <i class="fa fa-angle-right"></i>
-                </a>
                 
             
         
@@ -844,7 +857,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"<img src='img_icons/image_search.png'>Search Images","level":"3.1.7","depth":2,"next":{"title":"<img src='img_icons/palette.png'>Generate Images","level":"3.1.8","depth":2,"path":"GenerateImage.md","ref":"GenerateImage.md","articles":[]},"previous":{"title":"<img src='img_icons/spellcheck.png'>Proofreading document files","level":"3.1.6","depth":2,"path":"Proofread.md","ref":"Proofread.md","articles":[]},"dir":"ltr"},"config":{"plugins":["back-to-top-button","hide-published-with","custom-favicon"],"styles":{"website":"styles/website.css"},"pluginsConfig":{"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"hide-published-with":{},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"favicon":"img/favicon.ico","back-to-top-button":{},"custom-favicon":{},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"ailia DX Insight","language":"ja","gitbook":"*"},"file":{"path":"SearchImage.md","mtime":"2025-03-14T08:48:25.639Z","type":"markdown"},"gitbook":{"version":"5.1.4","time":"2025-05-23T09:25:57.160Z"},"basePath":".","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"<img src='img_icons/info.png'>OpenAI API Organization","level":"6.1.3","depth":2,"next":{"title":"<img src='img_icons/play_circle.png'>External Links","level":"7.1","depth":1,"ref":"","articles":[{"title":"<img src='img_icons/download.png'>Download the Evaluation App","level":"7.1.1","depth":2,"url":"https://ailia.ai/en/dx/","ref":"https://ailia.ai/en/dx/","articles":[]},{"title":"<img src='img_icons/play_circle.png'>Promotion Video（YouTube）","level":"7.1.2","depth":2,"url":"https://www.youtube.com/watch?v=2_HJTVPLWpg","ref":"https://www.youtube.com/watch?v=2_HJTVPLWpg","articles":[]}]},"previous":{"title":"<img src='img_icons/info.png'>OpenAI's Pricing","level":"6.1.2","depth":2,"path":"Pricing.md","ref":"Pricing.md","articles":[]},"dir":"ltr"},"config":{"plugins":["back-to-top-button","hide-published-with","custom-favicon"],"styles":{"website":"styles/website.css"},"pluginsConfig":{"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"hide-published-with":{},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"favicon":"img/favicon.ico","back-to-top-button":{},"custom-favicon":{},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"ailia DX Insight","language":"ja","gitbook":"*"},"file":{"path":"OpenAI_Organization.md","mtime":"2025-05-23T09:25:10.584Z","type":"markdown"},"gitbook":{"version":"5.1.4","time":"2025-05-23T09:25:57.160Z"},"basePath":".","book":{"language":""}});
         });
     </script>
 </div>
