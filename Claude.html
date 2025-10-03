@@ -52,10 +52,8 @@
     <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="SetUp.html" />
     
-    
-    <link rel="prev" href="./" />
+    <link rel="prev" href="Gemini.html" />
     
 
     </head>
@@ -97,7 +95,7 @@
             
         </li>
     
-        <li class="chapter active" data-level="1.2" data-path="overview.html">
+        <li class="chapter " data-level="1.2" data-path="overview.html">
             
                 <a href="overview.html">
             
@@ -631,7 +629,7 @@
             
         </li>
     
-        <li class="chapter " data-level="5.1.6" data-path="Claude.html">
+        <li class="chapter active" data-level="5.1.6" data-path="Claude.html">
             
                 <a href="Claude.html">
             
@@ -816,7 +814,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href="." ><img src='img_icons/overview.png'>Overview</a>
+        <a href="." ><img src='img_icons/psychology.png'>Claude</a>
     </h1>
 </div>
 
@@ -831,92 +829,28 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h1 id="overview">Overview</h1>
-<p>ailia DX Insight is an AI super app for corporate DX provided by ax Corporation and Axel Corporation.<br>
-By simply installing it on Windows or macOS, anyone can make use of AI in their business operations. <br>
-With unique AI from ailia added to text search, image search, voice recognition, corporate information search in large language models, it makes it easy to improve business efficiency using AI.<br></p>
-<p><img src="img/overview_01.png" alt="overview_01.png"></p>
-<h2 id="features">Features<div id="update06"></div></h2>
-<p>Below features can be used in aillia DX insight. The models used in each feature and execution environments are as follows.</p>
-<div class="scroll_area" style="width:100%;max-width:800px;overflow-x:scroll;">
-    <table style="width:800px;">
-      <thead>
-      <tr>
-      <th>Function</th>
-      <th>Operates on Cloud</th>
-      <th>Operates on Device</th>
-      </tr>
-      </thead>
-      <tbody>
-      <tr>
-      <td>Text Search　(RAG)</td>
-      <td>ChatGPT, Azure OpenAI, Gemini, Claude(* In Preparation) (Response Generation)</td>
-      <td>ailia SDK (Index Creation, Vector Search, Re-Rank Feature), Custom LLM (Response Generation)</td>
-      </tr>
-      <tr>
-      <td>Image Generation</td>
-      <td>DALLE</td>
-      <td>StableDiffusion(* In Preparation)</td>
-      </tr>
-      <tr>
-      <td>Summary / Idea Generation</td>
-      <td>ChatGPT, Azure OpenAI, Gemini, Claude(* In Preparation) (Response Generation)</td>
-      <td>Custom LLM</td>
-      </tr>
-      <tr>
-      <td>Translation</td>
-      <td>ChatGPT, Azure OpenAI, Gemini, Claude(* In Preparation) (Response Generation)</td>
-      <td>ailia SDK, Custom LLM</td>
-      </tr>
-      <tr>
-      <td>Image Search</td>
-      <td>-</td>
-      <td>ailia SDK</td>
-      </tr>
-      <tr>
-      <td>Voice Input</td>
-      <td>-</td>
-      <td>ailia SDK</td>
-      </tr>
-      <tr>
-      <td>Voice Recognition</td>
-      <td>Whisper Large V3 Turbo</td>
-      <td>ailia SDK</td>
-      </tr>
-      <tr>
-      <td>Meeting Minutes</td>
-      <td>Whisper Large V3 Turbo</td>
-      <td>ailia SDK</td>
-      </tr>
-      <tr>
-      <td>OCR</td>
-      <td>Azure AI Vision(* In Preparation)</td>
-      <td>ailia SDK</td>
-      </tr>
-      </tbody>
-    </table>
-</div>
-
-<h2 id="supported-file-formats">Supported File Formats</h2>
-<p>The formats supported by ailia DX Insight are as follows.</p>
-<h6 id="common-office-document-formats">Common Office Document Formats</h6>
-<p><code>pdf, doc, docx, txt, md, xlsx, csv, tex, css, html</code></p>
-<h6 id="program-document-formats">Program Document Formats</h6>
-<p><code>c, cpp, json, java, py, rb, php</code><br></p>
-<p><code>js, swift, .kt, rust, dart, lua</code> can be added from Settings <img src="img/icon_gear.png" alt="icon_gear"> /Index.<br></p>
-<p><img src="img/overview_02.png" alt="overview_02.png"></p>
-<h6 id="image-formats">Image Formats</h6>
-<p> <code>&apos;png&apos;, &apos;jpg&apos;, &apos;jpeg&apos;</code></p>
-<h6 id="audio-formats">Audio Formats</h6>
-<p><code>&apos;wav&apos;</code></p>
-<h2 id="file-saving-location">File Saving Location</h2>
-<p>ailia DX Insight saves database and model files in the following folders. By deleting these folders, you can initialize ailia DX Insight.<br>
-<code>Windows : c:/Users/[UserName]/Documents(*)/ailia DX Insight</code><br>
-<code>macOS : ~/Documents(*)/ailia DX Insight</code><br></p>
-<p><br>
-(*) In Windows it may be displayed as &quot;My Documents&quot;, and in Mac as &quot;Documents&quot;.</p>
-<p><br></p>
-<h4 id="next ＞"><a href="SetUp.html">Next ＞</a></h4>
+                                <h1 id="using-cloude-llm">Using Cloude LLM</h1>
+<p>In ailia DX insight, you can also use the Cloude App&apos;s LLM.<br>To use it, you need to create a developer account on the Cloude Console and obtain an API key.  </p>
+<p>You can create a Cloude Console account from <a href="https://console.anthropic.com/login" target="_blank">here</a>.  </p>
+<h2 id="steps-to-obtain-an-api-key">Steps to obtain an API key</h2>
+<ol>
+<li><p>From the Claude Console top page, enter your email address and follow the on-screen instructions to create a developer account.<br>If you have a Google account, you can link it and create a developer account by selecting &quot;Continue with Google&quot;.<br><img src="img/claude_01.jpg" alt="claude01"></p>
+</li>
+<li><p>Once logged in, the Claude Console dashboard will be displayed.<br>Select &quot;Get API Key&quot; to display the API key creation window.<br>(After the first generation, you will be redirected to the API Keys screen)<br><img src="img/claude_02.jpg" alt="claude02"></p>
+</li>
+<li><p>In the Key Name field of the window, enter any name for management purposes, then select &quot;Create API Key&quot;. An API key starting with &quot;sk-&quot; will be displayed.<br>Copy and save the displayed API key.<br><img src="img/claude_03.jpg" alt="claude03"></p>
+</li>
+</ol>
+<h2 id="operations-inside-dx-insight">Operations inside DX Insight</h2>
+<ol>
+<li><p>Select the settings <img src="img/icon_gear.png" alt="gear"> on the screen, choose Anthropic under the Chat AI section in the settings screen, and then select “Set Now” for the API key field just below it.<br><img src="img/claude_04.jpg" alt="claude04"></p>
+</li>
+<li><p>In the popup window, enter the API key you generated earlier on the Claude Console, then select &quot;Set&quot;.<br><img src="img/claude_05.jpg" alt="claude05"></p>
+</li>
+<li><p>By selecting Claude’s LLM from the LLM options on the left of the chat box, you can use Claude&apos;s model in ailia DX Insight.<br><img src="img/claude_06.jpg" alt="claude06"></p>
+</li>
+</ol>
+<h4 id="next-page- ＞"><a href="OpenAI_APIKey.html">Next page  ＞</a></h4>
 
                                 
                                 </section>
@@ -944,14 +878,10 @@ With unique AI from ailia added to text search, image search, voice recognition,
 
             
                 
-                <a href="./" class="navigation navigation-prev " aria-label="Previous page: <img src='img_icons/home.png'>HOME">
+                <a href="Gemini.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page: <img src='img_icons/psychology.png'>Gemini">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
-                
-                <a href="SetUp.html" class="navigation navigation-next " aria-label="Next page: <img src='img_icons/manage_accounts.png'>Setup">
-                    <i class="fa fa-angle-right"></i>
-                </a>
                 
             
         
@@ -960,7 +890,7 @@ With unique AI from ailia added to text search, image search, voice recognition,
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"<img src='img_icons/overview.png'>Overview","level":"1.2","depth":1,"next":{"title":"<img src='img_icons/manage_accounts.png'>Setup","level":"1.3","depth":1,"path":"SetUp.md","ref":"SetUp.md","articles":[]},"previous":{"title":"<img src='img_icons/home.png'>HOME","level":"1.1","depth":1,"path":"README.md","ref":"README.md","articles":[]},"dir":"ltr"},"config":{"plugins":["back-to-top-button","hide-published-with","custom-favicon"],"styles":{"website":"styles/website.css"},"pluginsConfig":{"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"hide-published-with":{},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"favicon":"img/favicon.ico","back-to-top-button":{},"custom-favicon":{},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"ailia DX Insight","language":"ja","gitbook":"*"},"file":{"path":"overview.md","mtime":"2025-09-26T01:23:17.907Z","type":"markdown"},"gitbook":{"version":"5.1.4","time":"2025-10-03T09:33:52.091Z"},"basePath":".","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"<img src='img_icons/psychology.png'>Claude","level":"5.1.6","depth":2,"next":{"title":"<img src='img_icons/info.png'>About OpenAI","level":"6.1","depth":1,"ref":"","articles":[{"title":"<img src='img_icons/info.png'>Obtain an OpenAI API Key","level":"6.1.1","depth":2,"path":"OpenAI_APIKey.md","ref":"OpenAI_APIKey.md","articles":[]},{"title":"<img src='img_icons/info.png'>OpenAI's Pricing","level":"6.1.2","depth":2,"path":"Pricing.md","ref":"Pricing.md","articles":[]},{"title":"<img src='img_icons/info.png'>OpenAI API Organization","level":"6.1.3","depth":2,"path":"OpenAI_Organization.md","ref":"OpenAI_Organization.md","articles":[]}]},"previous":{"title":"<img src='img_icons/psychology.png'>Gemini","level":"5.1.5","depth":2,"path":"Gemini.md","ref":"Gemini.md","articles":[]},"dir":"ltr"},"config":{"plugins":["back-to-top-button","hide-published-with","custom-favicon"],"styles":{"website":"styles/website.css"},"pluginsConfig":{"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"hide-published-with":{},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"favicon":"img/favicon.ico","back-to-top-button":{},"custom-favicon":{},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"ailia DX Insight","language":"ja","gitbook":"*"},"file":{"path":"Claude.md","mtime":"2025-10-03T07:37:00.122Z","type":"markdown"},"gitbook":{"version":"5.1.4","time":"2025-10-03T09:33:52.091Z"},"basePath":".","book":{"language":""}});
         });
     </script>
 </div>

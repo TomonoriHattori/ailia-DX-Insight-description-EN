@@ -52,10 +52,10 @@
     <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="SetUp.html" />
+    <link rel="next" href="VoiceInput.html" />
     
     
-    <link rel="prev" href="./" />
+    <link rel="prev" href="Recording.html" />
     
 
     </head>
@@ -97,7 +97,7 @@
             
         </li>
     
-        <li class="chapter active" data-level="1.2" data-path="overview.html">
+        <li class="chapter " data-level="1.2" data-path="overview.html">
             
                 <a href="overview.html">
             
@@ -391,7 +391,7 @@
             
         </li>
     
-        <li class="chapter " data-level="3.1.11" data-path="GenerateVoice.html">
+        <li class="chapter active" data-level="3.1.11" data-path="GenerateVoice.html">
             
                 <a href="GenerateVoice.html">
             
@@ -816,7 +816,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href="." ><img src='img_icons/overview.png'>Overview</a>
+        <a href="." ><img src='img_icons/record_voice_over.png'>Voice Generation</a>
     </h1>
 </div>
 
@@ -831,92 +831,32 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h1 id="overview">Overview</h1>
-<p>ailia DX Insight is an AI super app for corporate DX provided by ax Corporation and Axel Corporation.<br>
-By simply installing it on Windows or macOS, anyone can make use of AI in their business operations. <br>
-With unique AI from ailia added to text search, image search, voice recognition, corporate information search in large language models, it makes it easy to improve business efficiency using AI.<br></p>
-<p><img src="img/overview_01.png" alt="overview_01.png"></p>
-<h2 id="features">Features<div id="update06"></div></h2>
-<p>Below features can be used in aillia DX insight. The models used in each feature and execution environments are as follows.</p>
-<div class="scroll_area" style="width:100%;max-width:800px;overflow-x:scroll;">
-    <table style="width:800px;">
-      <thead>
-      <tr>
-      <th>Function</th>
-      <th>Operates on Cloud</th>
-      <th>Operates on Device</th>
-      </tr>
-      </thead>
-      <tbody>
-      <tr>
-      <td>Text Search　(RAG)</td>
-      <td>ChatGPT, Azure OpenAI, Gemini, Claude(* In Preparation) (Response Generation)</td>
-      <td>ailia SDK (Index Creation, Vector Search, Re-Rank Feature), Custom LLM (Response Generation)</td>
-      </tr>
-      <tr>
-      <td>Image Generation</td>
-      <td>DALLE</td>
-      <td>StableDiffusion(* In Preparation)</td>
-      </tr>
-      <tr>
-      <td>Summary / Idea Generation</td>
-      <td>ChatGPT, Azure OpenAI, Gemini, Claude(* In Preparation) (Response Generation)</td>
-      <td>Custom LLM</td>
-      </tr>
-      <tr>
-      <td>Translation</td>
-      <td>ChatGPT, Azure OpenAI, Gemini, Claude(* In Preparation) (Response Generation)</td>
-      <td>ailia SDK, Custom LLM</td>
-      </tr>
-      <tr>
-      <td>Image Search</td>
-      <td>-</td>
-      <td>ailia SDK</td>
-      </tr>
-      <tr>
-      <td>Voice Input</td>
-      <td>-</td>
-      <td>ailia SDK</td>
-      </tr>
-      <tr>
-      <td>Voice Recognition</td>
-      <td>Whisper Large V3 Turbo</td>
-      <td>ailia SDK</td>
-      </tr>
-      <tr>
-      <td>Meeting Minutes</td>
-      <td>Whisper Large V3 Turbo</td>
-      <td>ailia SDK</td>
-      </tr>
-      <tr>
-      <td>OCR</td>
-      <td>Azure AI Vision(* In Preparation)</td>
-      <td>ailia SDK</td>
-      </tr>
-      </tbody>
-    </table>
-</div>
-
-<h2 id="supported-file-formats">Supported File Formats</h2>
-<p>The formats supported by ailia DX Insight are as follows.</p>
-<h6 id="common-office-document-formats">Common Office Document Formats</h6>
-<p><code>pdf, doc, docx, txt, md, xlsx, csv, tex, css, html</code></p>
-<h6 id="program-document-formats">Program Document Formats</h6>
-<p><code>c, cpp, json, java, py, rb, php</code><br></p>
-<p><code>js, swift, .kt, rust, dart, lua</code> can be added from Settings <img src="img/icon_gear.png" alt="icon_gear"> /Index.<br></p>
-<p><img src="img/overview_02.png" alt="overview_02.png"></p>
-<h6 id="image-formats">Image Formats</h6>
-<p> <code>&apos;png&apos;, &apos;jpg&apos;, &apos;jpeg&apos;</code></p>
-<h6 id="audio-formats">Audio Formats</h6>
-<p><code>&apos;wav&apos;</code></p>
-<h2 id="file-saving-location">File Saving Location</h2>
-<p>ailia DX Insight saves database and model files in the following folders. By deleting these folders, you can initialize ailia DX Insight.<br>
-<code>Windows : c:/Users/[UserName]/Documents(*)/ailia DX Insight</code><br>
-<code>macOS : ~/Documents(*)/ailia DX Insight</code><br></p>
-<p><br>
-(*) In Windows it may be displayed as &quot;My Documents&quot;, and in Mac as &quot;Documents&quot;.</p>
-<p><br></p>
-<h4 id="next ＞"><a href="SetUp.html">Next ＞</a></h4>
+                                <h1 id="how-to-use-the-voice-generation">How to Use the Voice Generation</h1>
+<p>In ailia DX Insight, you can generate speech synthesis from text data.<br><br><em>When generating for the first time, audio data will be downloaded.</em>  </p>
+<p>To use the speech synthesis function, select &quot;Voice Generation&quot; from the menu at the top left of DX Insight.<br><br><img src="img/GenerateVoice_01.jpg" alt="GenerateVoice_01"><br>  </p>
+<h2 id="using-speech-synthesis-from-text-input">Using Speech Synthesis from Text Input</h2>
+<ol>
+<li><p>Enter text in the chat box and press the send button (or Ctrl+Enter).<br><br><img src="img/GenerateVoice_02.jpg" alt="GenerateVoice_02"><br>  </p>
+</li>
+<li><p>The generated result will be displayed.<br><br>You can check the audio by pressing the play button.<br><br><img src="img/GenerateVoice_03.jpg" alt="GenerateVoice_03"><br><br>You can export it in wav format by pressing the save button.  </p>
+</li>
+</ol>
+<h2 id="how-to-add-voices">How to Add Voices</h2>
+<p>By adding voice data (wav files) that becomes the basis for speech synthesis, you can add voice patterns.<br><br><em>An audio-containing wav file is required.</em><br>  </p>
+<ol>
+<li><p>Press the &quot;+ Add&quot; button in the &quot;Speech Synthesis&quot; section of the settings screen.<br><br><img src="img/GenerateVoice_04.jpg" alt="GenerateVoice_04"><br>  </p>
+</li>
+<li><p>Configure various settings in the displayed window.<br><br><img src="img/GenerateVoice_05.jpg" alt="GenerateVoice_05"><br>  </p>
+<ul>
+<li>Name: Set the name displayed in the UI.<br>  </li>
+<li>File path: Set audio of up to about 30 seconds that will serve as the voice tone for speech synthesis. Since silence reduces accuracy, it is preferable to have as little silence as possible. If you want faster speech synthesis, set audio of about 10 seconds.<br>  </li>
+<li>.wav File Content: Enter as text the content spoken in the audio you provided in the file path. For example, set it to something like “We need to buy water from Malaysia.”  </li>
+</ul>
+</li>
+</ol>
+<p><br>  </p>
+<h4 id="next-page ＞"><a href="VoiceInput.html">Next Page ＞</a></h4>
+<h4 id="back-to-list"><a href="UseAI.html">Back to List</a></h4>
 
                                 
                                 </section>
@@ -944,12 +884,12 @@ With unique AI from ailia added to text search, image search, voice recognition,
 
             
                 
-                <a href="./" class="navigation navigation-prev " aria-label="Previous page: <img src='img_icons/home.png'>HOME">
+                <a href="Recording.html" class="navigation navigation-prev " aria-label="Previous page: <img src='img_icons/record_voice_over.png'>Take Meeting Minutes">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
                 
-                <a href="SetUp.html" class="navigation navigation-next " aria-label="Next page: <img src='img_icons/manage_accounts.png'>Setup">
+                <a href="VoiceInput.html" class="navigation navigation-next " aria-label="Next page: <img src='img_icons/mic.png'>Using Voice Input">
                     <i class="fa fa-angle-right"></i>
                 </a>
                 
@@ -960,7 +900,7 @@ With unique AI from ailia added to text search, image search, voice recognition,
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"<img src='img_icons/overview.png'>Overview","level":"1.2","depth":1,"next":{"title":"<img src='img_icons/manage_accounts.png'>Setup","level":"1.3","depth":1,"path":"SetUp.md","ref":"SetUp.md","articles":[]},"previous":{"title":"<img src='img_icons/home.png'>HOME","level":"1.1","depth":1,"path":"README.md","ref":"README.md","articles":[]},"dir":"ltr"},"config":{"plugins":["back-to-top-button","hide-published-with","custom-favicon"],"styles":{"website":"styles/website.css"},"pluginsConfig":{"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"hide-published-with":{},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"favicon":"img/favicon.ico","back-to-top-button":{},"custom-favicon":{},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"ailia DX Insight","language":"ja","gitbook":"*"},"file":{"path":"overview.md","mtime":"2025-09-26T01:23:17.907Z","type":"markdown"},"gitbook":{"version":"5.1.4","time":"2025-10-03T09:33:52.091Z"},"basePath":".","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"<img src='img_icons/record_voice_over.png'>Voice Generation","level":"3.1.11","depth":2,"next":{"title":"<img src='img_icons/mic.png'>Using Voice Input","level":"3.1.12","depth":2,"path":"VoiceInput.md","ref":"VoiceInput.md","articles":[]},"previous":{"title":"<img src='img_icons/record_voice_over.png'>Take Meeting Minutes","level":"3.1.10","depth":2,"path":"Recording.md","ref":"Recording.md","articles":[]},"dir":"ltr"},"config":{"plugins":["back-to-top-button","hide-published-with","custom-favicon"],"styles":{"website":"styles/website.css"},"pluginsConfig":{"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"hide-published-with":{},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"favicon":"img/favicon.ico","back-to-top-button":{},"custom-favicon":{},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"ailia DX Insight","language":"ja","gitbook":"*"},"file":{"path":"GenerateVoice.md","mtime":"2025-10-03T09:29:43.471Z","type":"markdown"},"gitbook":{"version":"5.1.4","time":"2025-10-03T09:33:52.091Z"},"basePath":".","book":{"language":""}});
         });
     </script>
 </div>

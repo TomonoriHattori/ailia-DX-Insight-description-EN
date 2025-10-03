@@ -52,10 +52,10 @@
     <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="SetUp.html" />
+    <link rel="next" href="v1_3update.html" />
     
     
-    <link rel="prev" href="./" />
+    <link rel="prev" href="SetUp.html" />
     
 
     </head>
@@ -97,7 +97,7 @@
             
         </li>
     
-        <li class="chapter active" data-level="1.2" data-path="overview.html">
+        <li class="chapter " data-level="1.2" data-path="overview.html">
             
                 <a href="overview.html">
             
@@ -123,7 +123,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.4" data-path="v1_4update.html">
+        <li class="chapter active" data-level="1.4" data-path="v1_4update.html">
             
                 <a href="v1_4update.html">
             
@@ -816,7 +816,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href="." ><img src='img_icons/overview.png'>Overview</a>
+        <a href="." ><img src='img_icons/newspaper.png'>v1.4 release note</a>
     </h1>
 </div>
 
@@ -831,92 +831,62 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h1 id="overview">Overview</h1>
-<p>ailia DX Insight is an AI super app for corporate DX provided by ax Corporation and Axel Corporation.<br>
-By simply installing it on Windows or macOS, anyone can make use of AI in their business operations. <br>
-With unique AI from ailia added to text search, image search, voice recognition, corporate information search in large language models, it makes it easy to improve business efficiency using AI.<br></p>
-<p><img src="img/overview_01.png" alt="overview_01.png"></p>
-<h2 id="features">Features<div id="update06"></div></h2>
-<p>Below features can be used in aillia DX insight. The models used in each feature and execution environments are as follows.</p>
-<div class="scroll_area" style="width:100%;max-width:800px;overflow-x:scroll;">
-    <table style="width:800px;">
-      <thead>
-      <tr>
-      <th>Function</th>
-      <th>Operates on Cloud</th>
-      <th>Operates on Device</th>
-      </tr>
-      </thead>
-      <tbody>
-      <tr>
-      <td>Text Search　(RAG)</td>
-      <td>ChatGPT, Azure OpenAI, Gemini, Claude(* In Preparation) (Response Generation)</td>
-      <td>ailia SDK (Index Creation, Vector Search, Re-Rank Feature), Custom LLM (Response Generation)</td>
-      </tr>
-      <tr>
-      <td>Image Generation</td>
-      <td>DALLE</td>
-      <td>StableDiffusion(* In Preparation)</td>
-      </tr>
-      <tr>
-      <td>Summary / Idea Generation</td>
-      <td>ChatGPT, Azure OpenAI, Gemini, Claude(* In Preparation) (Response Generation)</td>
-      <td>Custom LLM</td>
-      </tr>
-      <tr>
-      <td>Translation</td>
-      <td>ChatGPT, Azure OpenAI, Gemini, Claude(* In Preparation) (Response Generation)</td>
-      <td>ailia SDK, Custom LLM</td>
-      </tr>
-      <tr>
-      <td>Image Search</td>
-      <td>-</td>
-      <td>ailia SDK</td>
-      </tr>
-      <tr>
-      <td>Voice Input</td>
-      <td>-</td>
-      <td>ailia SDK</td>
-      </tr>
-      <tr>
-      <td>Voice Recognition</td>
-      <td>Whisper Large V3 Turbo</td>
-      <td>ailia SDK</td>
-      </tr>
-      <tr>
-      <td>Meeting Minutes</td>
-      <td>Whisper Large V3 Turbo</td>
-      <td>ailia SDK</td>
-      </tr>
-      <tr>
-      <td>OCR</td>
-      <td>Azure AI Vision(* In Preparation)</td>
-      <td>ailia SDK</td>
-      </tr>
-      </tbody>
-    </table>
-</div>
-
-<h2 id="supported-file-formats">Supported File Formats</h2>
-<p>The formats supported by ailia DX Insight are as follows.</p>
-<h6 id="common-office-document-formats">Common Office Document Formats</h6>
-<p><code>pdf, doc, docx, txt, md, xlsx, csv, tex, css, html</code></p>
-<h6 id="program-document-formats">Program Document Formats</h6>
-<p><code>c, cpp, json, java, py, rb, php</code><br></p>
-<p><code>js, swift, .kt, rust, dart, lua</code> can be added from Settings <img src="img/icon_gear.png" alt="icon_gear"> /Index.<br></p>
-<p><img src="img/overview_02.png" alt="overview_02.png"></p>
-<h6 id="image-formats">Image Formats</h6>
-<p> <code>&apos;png&apos;, &apos;jpg&apos;, &apos;jpeg&apos;</code></p>
-<h6 id="audio-formats">Audio Formats</h6>
-<p><code>&apos;wav&apos;</code></p>
-<h2 id="file-saving-location">File Saving Location</h2>
-<p>ailia DX Insight saves database and model files in the following folders. By deleting these folders, you can initialize ailia DX Insight.<br>
-<code>Windows : c:/Users/[UserName]/Documents(*)/ailia DX Insight</code><br>
-<code>macOS : ~/Documents(*)/ailia DX Insight</code><br></p>
-<p><br>
-(*) In Windows it may be displayed as &quot;My Documents&quot;, and in Mac as &quot;Documents&quot;.</p>
-<p><br></p>
-<h4 id="next ＞"><a href="SetUp.html">Next ＞</a></h4>
+                                <h1 id="version-14-release-notes">Version 1.4 Release Notes</h1>
+<h2 id="new-features">New Features</h2>
+<ul>
+<li><p><a href="Claude.html">Support for Claude</a></p>
+</li>
+<li><p><a href="GenerateVoice.html">Added Voice Generation</a></p>
+</li>
+<li><p><a href="EditImage.html">Added background removal function to image editing</a></p>
+</li>
+<li><p><a href="Translation.html">Added the ability to translate multiple files simultaneously</a></p>
+</li>
+<li><p><a href="Recording.html">Added speaker separation function in meeting minutes</a></p>
+</li>
+</ul>
+<ul>
+<li><p>Support for ChatGPT GPT-5<br>
+  You can select GPT-5 from the LLM menu on the left side of the chat box.<br>
+  <img src="img/v1_4image_01.jpg" alt="image01"><br></p>
+<p>  *To use GPT-5, you need to <a href="OpenAI_APIKey.html">obtain an OpenAI API key</a>.<br></p>
+<p>  *Since GPT-5 and GPT-5mini are Thinking models, it may take some time to respond.
+<br></p>
+</li>
+<li><p>Added chat history search function<br>
+  You can search chat history for responses containing the keyword using the search box at the top of chat history.
+<br></p>
+</li>
+<li><p>Support for input fidelity in OpenAI image generation<br>
+  You can choose the fidelity of the input image (high/low) from Settings &gt; Image Generation.<br>
+  *A GPT model that supports input fidelity is required (e.g., gpt-image-1).<br>  <img src="img/v1_4image_02.jpg" alt="image02"><br></p>
+</li>
+</ul>
+<h2 id="ui-improvements">UI Improvements</h2>
+<ul>
+<li>Improved UI for voice search</li>
+<li>Changed so settings dialog does not close when clicking outside the dialog</li>
+<li>Removed the app selection box from the query bar</li>
+<li>Added confirmation before deleting all chat history</li>
+<li>Adjusted display position of the app menu</li>
+</ul>
+<h2 id="bug-fixes">Bug Fixes</h2>
+<ul>
+<li>Fixed an issue where deleting a registered watermark image caused an error during image generation</li>
+</ul>
+<h2 id="performance-improvements">Performance Improvements</h2>
+<ul>
+<li>Improved speed when adding large folders to RAG</li>
+</ul>
+<h2 id="terms-of-service">Terms of Service</h2>
+<ul>
+<li>Added English version of Terms of Service</li>
+</ul>
+<h2 id="build-environment">Build Environment</h2>
+<ul>
+<li>Updated Flutter from 3.19.6 to 3.32.4</li>
+</ul>
+<h4 id="next-page ＞"><a href="v1_3update.html">Next Page ＞</a></h4>
 
                                 
                                 </section>
@@ -944,12 +914,12 @@ With unique AI from ailia added to text search, image search, voice recognition,
 
             
                 
-                <a href="./" class="navigation navigation-prev " aria-label="Previous page: <img src='img_icons/home.png'>HOME">
+                <a href="SetUp.html" class="navigation navigation-prev " aria-label="Previous page: <img src='img_icons/manage_accounts.png'>Setup">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
                 
-                <a href="SetUp.html" class="navigation navigation-next " aria-label="Next page: <img src='img_icons/manage_accounts.png'>Setup">
+                <a href="v1_3update.html" class="navigation navigation-next " aria-label="Next page: <img src='img_icons/newspaper.png'>v1.3 release note">
                     <i class="fa fa-angle-right"></i>
                 </a>
                 
@@ -960,7 +930,7 @@ With unique AI from ailia added to text search, image search, voice recognition,
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"<img src='img_icons/overview.png'>Overview","level":"1.2","depth":1,"next":{"title":"<img src='img_icons/manage_accounts.png'>Setup","level":"1.3","depth":1,"path":"SetUp.md","ref":"SetUp.md","articles":[]},"previous":{"title":"<img src='img_icons/home.png'>HOME","level":"1.1","depth":1,"path":"README.md","ref":"README.md","articles":[]},"dir":"ltr"},"config":{"plugins":["back-to-top-button","hide-published-with","custom-favicon"],"styles":{"website":"styles/website.css"},"pluginsConfig":{"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"hide-published-with":{},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"favicon":"img/favicon.ico","back-to-top-button":{},"custom-favicon":{},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"ailia DX Insight","language":"ja","gitbook":"*"},"file":{"path":"overview.md","mtime":"2025-09-26T01:23:17.907Z","type":"markdown"},"gitbook":{"version":"5.1.4","time":"2025-10-03T09:33:52.091Z"},"basePath":".","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"<img src='img_icons/newspaper.png'>v1.4 release note","level":"1.4","depth":1,"next":{"title":"<img src='img_icons/newspaper.png'>v1.3 release note","level":"1.5","depth":1,"path":"v1_3update.md","ref":"v1_3update.md","articles":[]},"previous":{"title":"<img src='img_icons/manage_accounts.png'>Setup","level":"1.3","depth":1,"path":"SetUp.md","ref":"SetUp.md","articles":[]},"dir":"ltr"},"config":{"plugins":["back-to-top-button","hide-published-with","custom-favicon"],"styles":{"website":"styles/website.css"},"pluginsConfig":{"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"hide-published-with":{},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"favicon":"img/favicon.ico","back-to-top-button":{},"custom-favicon":{},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"ailia DX Insight","language":"ja","gitbook":"*"},"file":{"path":"v1_4update.md","mtime":"2025-10-03T09:33:19.766Z","type":"markdown"},"gitbook":{"version":"5.1.4","time":"2025-10-03T09:33:52.091Z"},"basePath":".","book":{"language":""}});
         });
     </script>
 </div>

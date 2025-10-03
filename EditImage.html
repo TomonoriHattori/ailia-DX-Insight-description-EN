@@ -52,10 +52,10 @@
     <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="SetUp.html" />
+    <link rel="next" href="Recording.html" />
     
     
-    <link rel="prev" href="./" />
+    <link rel="prev" href="GenerateImage.html" />
     
 
     </head>
@@ -97,7 +97,7 @@
             
         </li>
     
-        <li class="chapter active" data-level="1.2" data-path="overview.html">
+        <li class="chapter " data-level="1.2" data-path="overview.html">
             
                 <a href="overview.html">
             
@@ -365,7 +365,7 @@
             
         </li>
     
-        <li class="chapter " data-level="3.1.9" data-path="EditImage.html">
+        <li class="chapter active" data-level="3.1.9" data-path="EditImage.html">
             
                 <a href="EditImage.html">
             
@@ -816,7 +816,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href="." ><img src='img_icons/overview.png'>Overview</a>
+        <a href="." ><img src='img_icons/palette.png'>Edit Images</a>
     </h1>
 </div>
 
@@ -831,92 +831,60 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h1 id="overview">Overview</h1>
-<p>ailia DX Insight is an AI super app for corporate DX provided by ax Corporation and Axel Corporation.<br>
-By simply installing it on Windows or macOS, anyone can make use of AI in their business operations. <br>
-With unique AI from ailia added to text search, image search, voice recognition, corporate information search in large language models, it makes it easy to improve business efficiency using AI.<br></p>
-<p><img src="img/overview_01.png" alt="overview_01.png"></p>
-<h2 id="features">Features<div id="update06"></div></h2>
-<p>Below features can be used in aillia DX insight. The models used in each feature and execution environments are as follows.</p>
-<div class="scroll_area" style="width:100%;max-width:800px;overflow-x:scroll;">
-    <table style="width:800px;">
-      <thead>
-      <tr>
-      <th>Function</th>
-      <th>Operates on Cloud</th>
-      <th>Operates on Device</th>
-      </tr>
-      </thead>
-      <tbody>
-      <tr>
-      <td>Text Search　(RAG)</td>
-      <td>ChatGPT, Azure OpenAI, Gemini, Claude(* In Preparation) (Response Generation)</td>
-      <td>ailia SDK (Index Creation, Vector Search, Re-Rank Feature), Custom LLM (Response Generation)</td>
-      </tr>
-      <tr>
-      <td>Image Generation</td>
-      <td>DALLE</td>
-      <td>StableDiffusion(* In Preparation)</td>
-      </tr>
-      <tr>
-      <td>Summary / Idea Generation</td>
-      <td>ChatGPT, Azure OpenAI, Gemini, Claude(* In Preparation) (Response Generation)</td>
-      <td>Custom LLM</td>
-      </tr>
-      <tr>
-      <td>Translation</td>
-      <td>ChatGPT, Azure OpenAI, Gemini, Claude(* In Preparation) (Response Generation)</td>
-      <td>ailia SDK, Custom LLM</td>
-      </tr>
-      <tr>
-      <td>Image Search</td>
-      <td>-</td>
-      <td>ailia SDK</td>
-      </tr>
-      <tr>
-      <td>Voice Input</td>
-      <td>-</td>
-      <td>ailia SDK</td>
-      </tr>
-      <tr>
-      <td>Voice Recognition</td>
-      <td>Whisper Large V3 Turbo</td>
-      <td>ailia SDK</td>
-      </tr>
-      <tr>
-      <td>Meeting Minutes</td>
-      <td>Whisper Large V3 Turbo</td>
-      <td>ailia SDK</td>
-      </tr>
-      <tr>
-      <td>OCR</td>
-      <td>Azure AI Vision(* In Preparation)</td>
-      <td>ailia SDK</td>
-      </tr>
-      </tbody>
-    </table>
-</div>
-
-<h2 id="supported-file-formats">Supported File Formats</h2>
-<p>The formats supported by ailia DX Insight are as follows.</p>
-<h6 id="common-office-document-formats">Common Office Document Formats</h6>
-<p><code>pdf, doc, docx, txt, md, xlsx, csv, tex, css, html</code></p>
-<h6 id="program-document-formats">Program Document Formats</h6>
-<p><code>c, cpp, json, java, py, rb, php</code><br></p>
-<p><code>js, swift, .kt, rust, dart, lua</code> can be added from Settings <img src="img/icon_gear.png" alt="icon_gear"> /Index.<br></p>
-<p><img src="img/overview_02.png" alt="overview_02.png"></p>
-<h6 id="image-formats">Image Formats</h6>
-<p> <code>&apos;png&apos;, &apos;jpg&apos;, &apos;jpeg&apos;</code></p>
-<h6 id="audio-formats">Audio Formats</h6>
-<p><code>&apos;wav&apos;</code></p>
-<h2 id="file-saving-location">File Saving Location</h2>
-<p>ailia DX Insight saves database and model files in the following folders. By deleting these folders, you can initialize ailia DX Insight.<br>
-<code>Windows : c:/Users/[UserName]/Documents(*)/ailia DX Insight</code><br>
-<code>macOS : ~/Documents(*)/ailia DX Insight</code><br></p>
-<p><br>
-(*) In Windows it may be displayed as &quot;My Documents&quot;, and in Mac as &quot;Documents&quot;.</p>
+                                <h1 id="edit-generated-images">Edit Generated Images</h1>
+<p>You can edit images generated with ailia DX Insight.<br>For information on how to generate images, please refer to <a href="GenerateImage.html">here</a>.<br><em>An LLM that supports both image generation and editing is required.</em></p>
+<h2 id="edit-the-generated-image">Edit the Generated Image</h2>
+<p>You can edit the generated image to make it closer to what you want.</p>
+<ol>
+<li><p>Select &apos;Edit&apos; displayed in the upper right corner of the generated image.<br>
+<img src="img/EditImage_01.jpg" alt="EditImage_01"></p>
+</li>
+<li><p>The editing screen will be displayed<br>
+<img src="img/EditImage_02.jpg" alt="EditImage_02"></p>
+</li>
+<li><p>Drag your mouse to enclose the area you want to edit, creating a mask.<br>
+While the mask is created, select &apos;Done&apos; to complete the mask creation.
+<img src="img/EditImage_03.jpg" alt="EditImage_03"></p>
+</li>
+<li><p>Enter the edits you want to make in the chat box at the bottom of the screen and send.<br>
+<img src="img/EditImage_04.png" alt="EditImage_04"></p>
+</li>
+<li><p>The result of AI regenerating the image is displayed.<br>
+<img src="img/EditImage_05.jpg" alt="EditImage_05"></p>
+</li>
+<li><p></p><div id="update09"></div>By pressing &quot;Select All&quot; in the upper left corner of the image editing screen, you can select the entire screen.<br>
+<img src="img/EditImage_06.jpg" alt="EditImage_06"><p></p>
+</li>
+</ol>
+<h2 id="background-removal-function">Background Removal Function</h2>
+<h3 id="select-foreground">Select Foreground</h3>
+<p>You can extract the foreground of the generated image, mask only the background, and edit it.<br><img src="img/EditImage_09.jpg" alt="EditImage_09"><br><img src="img/EditImage_10.jpg" alt="EditImage_10"> </p>
+<h3 id="magic-selection">Magic Selection</h3>
+<p>Using the Magic Selection, you can automatically detect and mask objects in the selected area.  </p>
+<ol>
+<li><p>Select the Magic Selection on the edit screen.<br><img src="img/EditImage_11.jpg" alt="EditImage_11">  </p>
+</li>
+<li><p>Drag so that the box fits inside the object you want to edit.<br>You can also click to individually select details.<br>Repeat this process until the entire object is masked.<br><img src="img/EditImage_12.jpg" alt="EditImage_12">  </p>
+</li>
+<li><p>Enter a prompt in the chat box, and the edited result of the masked area will be displayed.<br><img src="img/EditImage_13.jpg" alt="EditImage_13"></p>
+</li>
+</ol>
+<h2 id="editing-images-with-text">Editing images with text</h2>
+<p>By using Gemini or gpt-image-1, you can edit generated images in a conversational flow like a chat.<br>
+<a href="OpenAI_Organization.html">* Using gpt-image-1 requires authentication of the OpenAI Organization.</a><br>
+<a href="Gemini.html#get-gemini-api-key">* Using Gemini requires the creation and registration of a Gemini API key with ailia DX Insight.</a><br>
+<img src="img/EditImg_tex01.jpg" alt="EditImg_tex01"><br></p>
+<ol>
+<li>Change the model in the query bar to &quot;Gemini&quot; or &quot;gpt-image-1&quot; and generate an image.<br>
+<img src="img/EditImg_tex02.jpg" alt="EditImg_tex02"><br></li>
+<li>Specify and send the content you want to edit on the image in text.<br>
+<img src="img/EditImg_tex03.jpg" alt="EditImg_tex03"><br></li>
+<li>The edited image is generated.<br>
+<img src="img/EditImg_tex04.jpg" alt="EditImg_tex04"><br></li>
+</ol>
 <p><br></p>
-<h4 id="next ＞"><a href="SetUp.html">Next ＞</a></h4>
+<h4 id="next ＞"><a href="Recording.html">Next ＞</a></h4>
+<h4 id="back-to-index"><a href="UseAI.html">Back to Index</a></h4>
 
                                 
                                 </section>
@@ -944,12 +912,12 @@ With unique AI from ailia added to text search, image search, voice recognition,
 
             
                 
-                <a href="./" class="navigation navigation-prev " aria-label="Previous page: <img src='img_icons/home.png'>HOME">
+                <a href="GenerateImage.html" class="navigation navigation-prev " aria-label="Previous page: <img src='img_icons/palette.png'>Generate Images">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
                 
-                <a href="SetUp.html" class="navigation navigation-next " aria-label="Next page: <img src='img_icons/manage_accounts.png'>Setup">
+                <a href="Recording.html" class="navigation navigation-next " aria-label="Next page: <img src='img_icons/record_voice_over.png'>Take Meeting Minutes">
                     <i class="fa fa-angle-right"></i>
                 </a>
                 
@@ -960,7 +928,7 @@ With unique AI from ailia added to text search, image search, voice recognition,
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"<img src='img_icons/overview.png'>Overview","level":"1.2","depth":1,"next":{"title":"<img src='img_icons/manage_accounts.png'>Setup","level":"1.3","depth":1,"path":"SetUp.md","ref":"SetUp.md","articles":[]},"previous":{"title":"<img src='img_icons/home.png'>HOME","level":"1.1","depth":1,"path":"README.md","ref":"README.md","articles":[]},"dir":"ltr"},"config":{"plugins":["back-to-top-button","hide-published-with","custom-favicon"],"styles":{"website":"styles/website.css"},"pluginsConfig":{"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"hide-published-with":{},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"favicon":"img/favicon.ico","back-to-top-button":{},"custom-favicon":{},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"ailia DX Insight","language":"ja","gitbook":"*"},"file":{"path":"overview.md","mtime":"2025-09-26T01:23:17.907Z","type":"markdown"},"gitbook":{"version":"5.1.4","time":"2025-10-03T09:33:52.091Z"},"basePath":".","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"<img src='img_icons/palette.png'>Edit Images","level":"3.1.9","depth":2,"next":{"title":"<img src='img_icons/record_voice_over.png'>Take Meeting Minutes","level":"3.1.10","depth":2,"path":"Recording.md","ref":"Recording.md","articles":[]},"previous":{"title":"<img src='img_icons/palette.png'>Generate Images","level":"3.1.8","depth":2,"path":"GenerateImage.md","ref":"GenerateImage.md","articles":[]},"dir":"ltr"},"config":{"plugins":["back-to-top-button","hide-published-with","custom-favicon"],"styles":{"website":"styles/website.css"},"pluginsConfig":{"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"hide-published-with":{},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"favicon":"img/favicon.ico","back-to-top-button":{},"custom-favicon":{},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"ailia DX Insight","language":"ja","gitbook":"*"},"file":{"path":"EditImage.md","mtime":"2025-10-03T07:34:50.713Z","type":"markdown"},"gitbook":{"version":"5.1.4","time":"2025-10-03T09:33:52.091Z"},"basePath":".","book":{"language":""}});
         });
     </script>
 </div>
