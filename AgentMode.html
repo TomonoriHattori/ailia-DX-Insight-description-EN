@@ -858,8 +858,11 @@
                                 <section class="normal markdown-section">
                                 
                                 <h1 id="using-the-ai-agent">Using the AI Agent</h1>
-<p>By granting the AI agent access to the files it needs, you can have it edit files directly on your behalf.
-Because you can define the scope of access in advance from the settings screen, you can safely delegate file editing.</p>
+<p>By granting the AI agent access to the files it needs, you can have it edit files directly on your behalf.<br>
+Because you can define the scope of access in advance from the settings screen, you can safely delegate file editing.<br></p>
+<h3 id="llms-available-in-agent-mode">LLMs available in Agent Mode</h3>
+<p>Agent Mode is available with OpenAI, Claude, Gemini, and Gemma4.
+It cannot be used with Azure, OpenRouter, or local LLMs other than Gemma4.<br></p>
 <h2 id="asking-the-ai-agent-to-edit-a-specified-file">Asking the AI Agent to Edit a Specified File</h2>
 <p>Set the app mode to Chat.</p>
 <ol>
@@ -880,10 +883,17 @@ Because you can define the scope of access in advance from the settings screen, 
 <img src="img/AgentMode04.jpg" alt="AgentMode04"><br></p>
 </li>
 </ol>
-<h2 id="managing-the-agents-file-permissions">Managing the Agent&apos;s File Permissions</h2>
-<p>From the &quot;Agent&quot; item in the settings screen, you can manage the AI agent&apos;s &quot;read&quot; and &quot;write&quot; permissions for files on your PC and in external cloud repositories.<br>
+<h2 id="changing-the-agent-settings">Changing the agent settings</h2>
+<p>You can change detailed settings related to the AI Agent from the &quot;Agent&quot; section of the settings screen.<br>
 <img src="img/AgentMode05.jpg" alt="AgentMode05"><br></p>
-<p>*If you grant access on the &quot;Agent Permission Confirmation&quot; screen and select &quot;Add to settings&quot;, the choice will also be reflected automatically in these settings.</p>
+<p>Maximum number of iterations : Defines the maximum number of times the agent will reason (think) in response to a single question. Increase this value for complex tasks.</p>
+<p>Maximum output characters : Specifies the maximum number of output characters for each tool the agent uses. For the file-reading tool, files exceeding this size are read in split chunks.</p>
+<p>When using a cloud LLM with a large context, increasing this value can improve processing speed.</p>
+<p>Note that during the reasoning loop, the output of all tools is retained, but if it exceeds 75% of the LLM&apos;s context length, it is compressed through compaction.</p>
+<h3 id="managing-the-agents-file-permissions">Managing the Agent&apos;s File Permissions</h3>
+<p>By managing the AI Agent&apos;s &quot;read&quot; and &quot;write&quot; permissions for files on your PC or in external cloud repositories, you can use the AI Agent feature more safely.<br>
+<img src="img/AgentMode06.jpg" alt="AgentMode06"><br></p>
+<p><em>Even when you grant access on the &quot;Agent Permission Confirmation&quot; screen and choose &quot;Add to settings&quot;, the choice is automatically reflected in these settings.</em></p>
 <p><strong>Allowed write directiories</strong> : Allows the agent to write to files within the directories registered here.</p>
 <p><strong>Allowed read paths</strong> : Allows the agent to read files at the paths registered here.</p>
 <p><strong>Blocked read paths</strong> : Denies (restricts) the agent from reading files at the paths registered here.</p>
@@ -935,7 +945,7 @@ Because you can define the scope of access in advance from the settings screen, 
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"<img src='img_icons/robot.png'>Using the AI Agent","level":"3.1.2","depth":2,"next":{"title":"<img src='img_icons/forum.png'>Ask Questions About Document Files","level":"3.1.3","depth":2,"path":"DocumentFile.md","ref":"DocumentFile.md","articles":[]},"previous":{"title":"<img src='img_icons/forum.png'>Ask AI Questions","level":"3.1.1","depth":2,"path":"AskToAI.md","ref":"AskToAI.md","articles":[]},"dir":"ltr"},"config":{"plugins":["back-to-top-button","hide-published-with","custom-favicon"],"styles":{"website":"styles/website.css"},"pluginsConfig":{"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"hide-published-with":{},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"favicon":"img/favicon.ico","back-to-top-button":{},"custom-favicon":{},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"ailia DX Insight","language":"en","gitbook":"*"},"file":{"path":"AgentMode.md","mtime":"2026-06-30T06:44:08.120Z","type":"markdown"},"gitbook":{"version":"5.1.4","time":"2026-06-30T07:42:37.555Z"},"basePath":".","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"<img src='img_icons/robot.png'>Using the AI Agent","level":"3.1.2","depth":2,"next":{"title":"<img src='img_icons/forum.png'>Ask Questions About Document Files","level":"3.1.3","depth":2,"path":"DocumentFile.md","ref":"DocumentFile.md","articles":[]},"previous":{"title":"<img src='img_icons/forum.png'>Ask AI Questions","level":"3.1.1","depth":2,"path":"AskToAI.md","ref":"AskToAI.md","articles":[]},"dir":"ltr"},"config":{"plugins":["back-to-top-button","hide-published-with","custom-favicon"],"styles":{"website":"styles/website.css"},"pluginsConfig":{"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"hide-published-with":{},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"favicon":"img/favicon.ico","back-to-top-button":{},"custom-favicon":{},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"ailia DX Insight","language":"en","gitbook":"*"},"file":{"path":"AgentMode.md","mtime":"2026-07-01T02:08:30.948Z","type":"markdown"},"gitbook":{"version":"5.1.4","time":"2026-07-01T02:20:50.082Z"},"basePath":".","book":{"language":""}});
         });
     </script>
 </div>
